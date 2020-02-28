@@ -1,0 +1,16 @@
+th, td {
+    border: 1px solid #797878;
+    padding: 5px 12px;
+    font-size: 12px;
+    text-align: center;
+  }
+  th {
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    text-transform: capitalize;
+  }
+  table{
+    margin-top: 15px;
+  }
+  
