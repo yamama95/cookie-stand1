@@ -4,17 +4,66 @@
     <title>cookie-stand</title>
     <link rel="stylesheet" href="css/reset.css">
     <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <style>
+      h1 {
+        color: blueviolet;
+font-size: 50px;
+     height: 200px;
+     text-align: center;
+  width: 97%;
+  padding: 36px 0px 60px 0px;
+  margin: 0px 20px 0px 20px;
+  height: 39px;
+  background-color: rgb(0, 70, 89);
+  border-bottom: 3px solid rgb(0, 45, 58);
+  color: white;
+  font-family: 'Oswald', sans-serif;
+     }
+     body{
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR51DG8Ge99aYC4R7ul8FO781_-CK7YUA7hacSx5AgFylS71ISq");
+     background-repeat: no-repeat;
+     background-position: right;
+     background-color: cornflowerblue;
+     background-position-x: 1000px;
+     }
+     footer {
+  color: rgb(213, 230, 232);
+  background-color: rgb(0, 45, 58);
+  width: 100%;
+  font-size: 14px;
+  padding: 20px 0px 20px 30px;
+  margin-top: 180px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+  
+    </style>
   </head>
   <body>
     <header>
-      <h1>sales data</h1>
+      <h1>Sales data </h1>
     </header>
     <main>
+      <form id="locationform">
+        <h3>Add new shop :</h3>
+        <label for="name">shop name</label>
+        <input type="text" id="name" placeholder="Enter shop name">
+        <h3>Add new min:</h3>
+        <label for="min">min</label>
+        <input type="text" id="min" placeholder="Enter min">
+        <h3>Add new max:</h3>
+        <label for="max">max</label>
+        <input type="text" id="max" placeholder="Enter shop max">
+        <h3>Add new avg :</h3>
+        <label for="avg">avg</label>
+        <input type="text" id="avg" placeholder="Enter avg">
+        <input type="submit" >
+                </form>
         <div id="container">
         </div>
     
     </main>
-    <footer></footer>
+    <footer>All rights reserved</footer>
     <script src="js/app.js"></script>
   </body>
 </html>

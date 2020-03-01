@@ -50,6 +50,18 @@ Locations.prototype.render = function () {
   trEl.appendChild(tdTotal);
   tdTotal.textContent = this.total;
 };
+var locationform=document.getElementById('locationform');
+locationform.addEventListener('submit' , function(event){
+  event.preventDefault();
+  console.log(event.target);
+  var shopName =event.target.name.value;
+  var min =event.target.min.value;
+  var max =event.target.max.value;
+  var avg =event.target.avg.value;
+  console.log(shopName);
+  var newShop = new Locations(shopName, min , max , avg);
+  newShop.render();
+});
 //objects
 new Locations('seattle', 23, 65, 6.3);
 new Locations('Tokyo', 3, 24, 1.2);
